@@ -91,3 +91,40 @@ The PostRepository interface extends JpaRepository and provides methods for CRUD
 
 The UserRepository interface extends JpaRepository and provides methods for CRUD operations on the User entity.
 
+
+## Spring Application Configuration
+
+### Database Configuration
+
+The API includes integration with both SQL and H2 databases for data storage.
+
+#### H2 Database
+
+For H2 in-memory database:
+
+- **URL**: jdbc:h2:mem:testdb
+
+#### Data Source Initialization
+
+- **Defer Data Source Initialization**: true
+
+<!-- Uncomment the following lines for MySQL database -->
+
+<!--
+#### MySQL Database
+
+- **URL**: jdbc:mysql://localhost:3306/social-media-database
+- **Username**: social-media-user
+- **Password**: dummypassword
+
+#### Hibernate Configuration
+
+- **DDL Auto**: update
+- **Hibernate Dialect**: org.hibernate.dialect.MySQLDialect
+-->
+
+<!-- Uncomment the following line for enabling SQL logs -->
+<!--
+- **Show SQL**: true
+-->
+
