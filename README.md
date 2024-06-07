@@ -108,9 +108,9 @@ For H2 in-memory database:
 
 - **Defer Data Source Initialization**: true
 
-<!-- Uncomment the following lines for MySQL database -->
+<!- Uncomment the following lines for MySQL database ->
 
-<!--
+<!-
 #### MySQL Database
 
 - **URL**: jdbc:mysql://localhost:3306/social-media-database
@@ -121,10 +121,10 @@ For H2 in-memory database:
 
 - **DDL Auto**: update
 - **Hibernate Dialect**: org.hibernate.dialect.MySQLDialect
--->
+  >
 
-<!-- Uncomment the following line for enabling SQL logs -->
-<!--
+<!- Uncomment the following line for enabling SQL logs -->
+<!-
 - **Show SQL**: true
--->
+->
 
