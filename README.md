@@ -58,6 +58,18 @@ The API provides the following endpoints for managing users and posts:
 - **Method**: `DELETE`
 - **Description**: Delete a user by ID.
 
+#### Create Post For User
+
+- **URL**: `/jpa/users/{id}/posts`
+- **Method**: `POST`
+- **Description**: Create a new post for a specific user and return the URI of the created resource.
+
+#### Retrieve Post By ID
+
+- **URL**: `/jpa/users/{id}/posts/{post_id}`
+- **Method**: `GET`
+- **Description**: Retrieve a specific post by ID for a given user.
+
 ### Services
 
 #### UserDaoService
@@ -70,4 +82,12 @@ The UserDaoService class is responsible for managing user data. It provides meth
 - `findAll()`: Returns a list of all users.
 - `findOne(int id)`: Finds and returns a user by their ID.
 - `deleteById(int id)`: Deletes a user by their ID.
+
+#### PostRepository
+
+The PostRepository interface extends JpaRepository and provides methods for CRUD operations on the Post entity.
+
+#### UserRepository
+
+The UserRepository interface extends JpaRepository and provides methods for CRUD operations on the User entity.
 
